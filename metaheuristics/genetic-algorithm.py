@@ -24,6 +24,20 @@ def fitness(tablero):
                 colisiones += 1
     return colisiones
 
+def seleccion(poblacion, cantidad_muestra):
+    tableros_seleccionados = []
+    for _ in range(len(poblacion)):
+        muestra = random.sample(poblacion, cantidad_muestra)
+        mejores = min(muestra, key=lambda x: x[1])
+        tableros_seleccionados.append(mejores)
+    return tableros_seleccionados
+
+def cruce(primer_padre, segundo_padre):
+    print("En proceso...")
+
+def mutacion(tablero, tasa_mutacion):
+    print("En proceso...")
+
 # Implementación del algoritmo genético
 def algoritmo_genetico():
     # Las 30 réplicas
@@ -46,13 +60,22 @@ def algoritmo_genetico():
         if mejor_fitness == 0:
             print("Mejor tablero:", mejor_tablero)
             print("Mejor fitness:", mejor_fitness)
-        # else:
-            # while len(next_generation) < len(poblacion_tableros):
-            #     print("hola")
-                # TODO: Incluir métodos de algoritmos genéticos selección, cruce y mutación
+        else:
+            pool_padres = seleccion(poblacion_tableros, 4)
+
+            while len(next_generation) < len(poblacion_tableros):
+
+                # Selección de padres para posterior cruce, se usa '[0]' ya que al ser una tupla con el tablero y 
+                # el fitness, solo necesitamos el tablero para crear la nueva población
+                primer_padre = random.choice(pool_padres)[0]
+                segundo_padre = random.choice(pool_padres)[0]
+                print("Padre 1:", primer_padre)
+                print("Padre 2:", segundo_padre)
+
+                # TODO: Incluir métodos de algoritmos genéticos de cruce y mutación
                 # TODO: Definir tasa de mutación
 
-            
+                poblacion_tableros = next_generation
 
         fin = time.time()
         print(f"Réplica: {replica + 1} | Tiempo = {fin - inicio:.4f} segundos")
