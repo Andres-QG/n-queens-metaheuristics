@@ -9,7 +9,7 @@ def generar_tablero(tamano):
     return tablero
 
 # Valor preliminar
-GENERACIONES_MAXIMAS = 150
+GENERACIONES_MAXIMAS = 1500
 TAMANO_POBLACION = 50
 
 # Función para calcular el fitness de un tablero, es decir comprobar si se da alguna colisión entre las reinas
@@ -39,21 +39,28 @@ def mutacion(tablero, tasa_mutacion):
     print("En proceso...")
 
 # Implementación del algoritmo genético
-def algoritmo_genetico():
-    # Las 30 réplicas
+def algoritmo_genetico(Tamano):
+
+    print(f"=== Experimento para N={Tamano} ===")
+
+    # Replicación
     for replica in range(30):
+
         inicio = time.time()
 
         # Se crea la población de 50 tableros para cada tratamiento
         # Tamano de tablero fijo en 8, falta hacer para que cambie a 20
-        poblacion_tableros = [(generar_tablero(8), 0) for _ in range(TAMANO_POBLACION)]
+        poblacion_tableros = [(generar_tablero(Tamano), 0) for _ in range(TAMANO_POBLACION)]
+
         generation = 0
         solucion_optima = False
+
         while generation < GENERACIONES_MAXIMAS and solucion_optima == False:
+
             generation = generation + 1
             poblacion_tableros = [(tablero, fitness(tablero)) for tablero, _ in poblacion_tableros]
-
             mejor_tablero, mejor_fitness = min(poblacion_tableros, key=lambda x: x[1])
+
             # print("Mejor tablero:", mejor_tablero)
             # print("Mejor fitness:", mejor_fitness)
 
@@ -62,7 +69,7 @@ def algoritmo_genetico():
             if mejor_fitness == 0:
                 print("Mejor tablero:", mejor_tablero)
                 print("Mejor fitness:", mejor_fitness)
-                solucion_optima_encontrada = True
+                solucion_optima = True
             else:
                 pool_padres = seleccion(poblacion_tableros, 4)
 
@@ -72,8 +79,6 @@ def algoritmo_genetico():
                     # el fitness, solo necesitamos el tablero para crear la nueva población
                     primer_padre = random.choice(pool_padres)[0]
                     segundo_padre = random.choice(pool_padres)[0]
-                    # print("Padre 1:", primer_padre)
-                    # print("Padre 2:", segundo_padre)
 
                     # TODO: Incluir métodos de algoritmos genéticos de cruce y mutación
                     # TODO: Definir tasa de mutación
@@ -81,7 +86,8 @@ def algoritmo_genetico():
                     poblacion_tableros = next_generation
 
         fin = time.time()
-        print(f"Réplica: {replica + 1} | Tiempo = {fin - inicio:.4f} segundos | Iteraciones: {generation}")
+        print(f"Corrida {replica + 1} | Tiempo = {fin - inicio:.4f} s | Iteraciones: {generation}")
 
 if __name__ == "__main__":
-    algoritmo_genetico()
+    algoritmo_genetico(8)
+    algoritmo_genetico(20)
