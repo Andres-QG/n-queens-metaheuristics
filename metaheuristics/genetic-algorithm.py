@@ -5,6 +5,7 @@ import random
 # Genera un tablero con posiciones aleatorias
 def generar_tablero(tamano):
     tablero = [random.randint(0, (tamano-1)) for _ in range(tamano)]
+    print("tablero: ", tablero)
     return tablero
 
 # Valor preliminar
@@ -17,10 +18,11 @@ def fitness(tablero):
     for i in range(n):
         for j in range(i + 1, n):
             if tablero[i] == tablero[j]:
-                ataques += 1
+                colisiones += 1
             if abs(tablero[i] - tablero[j]) == abs(i - j):
-                ataques += 1
+                colisiones += 1
     return colisiones
+
 
 def algoritmo_genetico():
     # Se crea la población de 30 tableros para cada tratamiento
@@ -29,3 +31,7 @@ def algoritmo_genetico():
 
     for generation in range(GENERACIONES_MAXIMAS):
         poblacion_tableros = [(tablero, fitness(tablero)) for tablero, _ in poblacion_tableros]
+        
+
+if __name__ == "__main__":
+    algoritmo_genetico()
