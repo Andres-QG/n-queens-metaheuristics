@@ -1,5 +1,4 @@
 # Algoritmo genético para el problema de las n-reinas
-
 import random
 import time
 
@@ -47,7 +46,7 @@ def algoritmo_genetico():
         if mejor_fitness == 0:
             print("Mejor tablero:", mejor_tablero)
             print("Mejor fitness:", mejor_fitness)
-        else:
+        # else:
             # while len(next_generation) < len(poblacion_tableros):
             #     print("hola")
                 # TODO: Incluir métodos de algoritmos genéticos selección, cruce y mutación
