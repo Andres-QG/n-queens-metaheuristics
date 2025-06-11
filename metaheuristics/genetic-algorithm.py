@@ -11,6 +11,7 @@ def generar_tablero(tamano):
 
 # Valor preliminar
 GENERACIONES_MAXIMAS = 150
+TAMANO_POBLACION = 50
 
 # Función para calcular el fitness de un tablero, es decir comprobar si se da alguna colisión entre las reinas
 def fitness(tablero):
@@ -30,9 +31,9 @@ def algoritmo_genetico():
     for replica in range(30):
         inicio = time.time()
 
-        # Se crea la población de 30 tableros para cada tratamiento
+        # Se crea la población de 50 tableros para cada tratamiento
         # Tamano de tablero fijo en 8, falta hacer para que cambie a 20
-        poblacion_tableros = [(generar_tablero(8), 0) for _ in range(30)]
+        poblacion_tableros = [(generar_tablero(8), 0) for _ in range(TAMANO_POBLACION)]
 
         for generation in range(GENERACIONES_MAXIMAS):
             poblacion_tableros = [(tablero, fitness(tablero)) for tablero, _ in poblacion_tableros]
@@ -41,11 +42,19 @@ def algoritmo_genetico():
         print("Mejor tablero:", mejor_tablero)
         print("Mejor fitness:", mejor_fitness)
 
+        next_generation = []
+
         if mejor_fitness == 0:
             print("Mejor tablero:", mejor_tablero)
             print("Mejor fitness:", mejor_fitness)
-            # break
+        else:
+            # while len(next_generation) < len(poblacion_tableros):
+            #     print("hola")
+                # TODO: Incluir métodos de algoritmos genéticos selección, cruce y mutación
+                # TODO: Definir tasa de mutación
+
             
+
         fin = time.time()
         print(f"Réplica: {replica + 1} | Tiempo = {fin - inicio:.4f} segundos")
 
