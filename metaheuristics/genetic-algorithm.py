@@ -90,10 +90,7 @@ def algoritmo_genetico(Tamano):
                     if random.random() < 0.1:
                         hijo = mutacion(hijo)
                     next_generation.append((hijo, 0))
-
-                    # TODO: Incluir métodos de algoritmos genéticos de cruce y mutación
-                    # TODO: Definir tasa de mutación
-                    # next_generation = poblacion_tableros
+                    
                 poblacion_tableros = next_generation
 
         fin = time.time()
