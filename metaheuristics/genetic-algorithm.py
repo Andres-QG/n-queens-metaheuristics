@@ -47,38 +47,41 @@ def algoritmo_genetico():
         # Se crea la población de 50 tableros para cada tratamiento
         # Tamano de tablero fijo en 8, falta hacer para que cambie a 20
         poblacion_tableros = [(generar_tablero(8), 0) for _ in range(TAMANO_POBLACION)]
-
-        for generation in range(GENERACIONES_MAXIMAS):
+        generation = 0
+        solucion_optima = False
+        while generation < GENERACIONES_MAXIMAS and solucion_optima == False:
+            generation = generation + 1
             poblacion_tableros = [(tablero, fitness(tablero)) for tablero, _ in poblacion_tableros]
 
-        mejor_tablero, mejor_fitness = min(poblacion_tableros, key=lambda x: x[1])
-        print("Mejor tablero:", mejor_tablero)
-        print("Mejor fitness:", mejor_fitness)
+            mejor_tablero, mejor_fitness = min(poblacion_tableros, key=lambda x: x[1])
+            # print("Mejor tablero:", mejor_tablero)
+            # print("Mejor fitness:", mejor_fitness)
 
-        next_generation = []
+            next_generation = []
 
-        if mejor_fitness == 0:
-            print("Mejor tablero:", mejor_tablero)
-            print("Mejor fitness:", mejor_fitness)
-        else:
-            pool_padres = seleccion(poblacion_tableros, 4)
+            if mejor_fitness == 0:
+                print("Mejor tablero:", mejor_tablero)
+                print("Mejor fitness:", mejor_fitness)
+                solucion_optima_encontrada = True
+            else:
+                pool_padres = seleccion(poblacion_tableros, 4)
 
-            while len(next_generation) < len(poblacion_tableros):
+                while len(next_generation) < len(poblacion_tableros):
 
-                # Selección de padres para posterior cruce, se usa '[0]' ya que al ser una tupla con el tablero y 
-                # el fitness, solo necesitamos el tablero para crear la nueva población
-                primer_padre = random.choice(pool_padres)[0]
-                segundo_padre = random.choice(pool_padres)[0]
-                print("Padre 1:", primer_padre)
-                print("Padre 2:", segundo_padre)
+                    # Selección de padres para posterior cruce, se usa '[0]' ya que al ser una tupla con el tablero y 
+                    # el fitness, solo necesitamos el tablero para crear la nueva población
+                    primer_padre = random.choice(pool_padres)[0]
+                    segundo_padre = random.choice(pool_padres)[0]
+                    # print("Padre 1:", primer_padre)
+                    # print("Padre 2:", segundo_padre)
 
-                # TODO: Incluir métodos de algoritmos genéticos de cruce y mutación
-                # TODO: Definir tasa de mutación
-
-                poblacion_tableros = next_generation
+                    # TODO: Incluir métodos de algoritmos genéticos de cruce y mutación
+                    # TODO: Definir tasa de mutación
+                    next_generation = poblacion_tableros
+                    poblacion_tableros = next_generation
 
         fin = time.time()
-        print(f"Réplica: {replica + 1} | Tiempo = {fin - inicio:.4f} segundos")
+        print(f"Réplica: {replica + 1} | Tiempo = {fin - inicio:.4f} segundos | Iteraciones: {generation}")
 
 if __name__ == "__main__":
     algoritmo_genetico()
