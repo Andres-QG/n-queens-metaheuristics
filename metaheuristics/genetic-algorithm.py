@@ -9,7 +9,7 @@ def generar_tablero(tamano):
     return tablero
 
 # Valor preliminar
-GENERACIONES_MAXIMAS = 1500
+GENERACIONES_MAXIMAS = 10000
 TAMANO_POBLACION = 50
 
 # Función para calcular el fitness de un tablero, es decir comprobar si se da alguna colisión entre las reinas
@@ -33,10 +33,15 @@ def seleccion(poblacion, cantidad_muestra):
     return tableros_seleccionados
 
 def cruce(primer_padre, segundo_padre):
-    print("En proceso...")
+    punto_cruce = random.randint(1, 7)
+    hijo = primer_padre[:punto_cruce] + segundo_padre[punto_cruce:]
+    return hijo
 
-def mutacion(tablero, tasa_mutacion):
-    print("En proceso...")
+
+def mutacion(tablero):
+    pos1, pos2 = random.sample(range(8), 2)
+    tablero[pos1], tablero[pos2] = tablero[pos2], tablero[pos1]
+    return tablero
 
 # Implementación del algoritmo genético
 def algoritmo_genetico(Tamano):
@@ -54,6 +59,8 @@ def algoritmo_genetico(Tamano):
 
         generation = 0
         solucion_optima = False
+
+        mejor_fitness = 28
 
         while generation < GENERACIONES_MAXIMAS and solucion_optima == False:
 
@@ -79,14 +86,18 @@ def algoritmo_genetico(Tamano):
                     # el fitness, solo necesitamos el tablero para crear la nueva población
                     primer_padre = random.choice(pool_padres)[0]
                     segundo_padre = random.choice(pool_padres)[0]
+                    hijo = cruce(primer_padre, segundo_padre)
+                    if random.random() < 0.1:
+                        hijo = mutacion(hijo)
+                    next_generation.append((hijo, 0))
 
                     # TODO: Incluir métodos de algoritmos genéticos de cruce y mutación
                     # TODO: Definir tasa de mutación
-                    next_generation = poblacion_tableros
-                    poblacion_tableros = next_generation
+                    # next_generation = poblacion_tableros
+                poblacion_tableros = next_generation
 
         fin = time.time()
-        print(f"Corrida {replica + 1} | Tiempo = {fin - inicio:.4f} s | Iteraciones: {generation}")
+        print(f"Corrida {replica + 1} | Tiempo = {fin - inicio:.4f} s | Iteraciones: {generation} | Mejor fitness: {mejor_fitness}")
 
 if __name__ == "__main__":
     algoritmo_genetico(8)
