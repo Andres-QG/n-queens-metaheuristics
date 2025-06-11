@@ -1,11 +1,12 @@
 # Algoritmo genético para el problema de las n-reinas
 
 import random
+import time
 
 # Genera un tablero con posiciones aleatorias
 def generar_tablero(tamano):
     tablero = [random.randint(0, (tamano-1)) for _ in range(tamano)]
-    print("tablero: ", tablero)
+    # print("tablero: ", tablero)
     return tablero
 
 # Valor preliminar
@@ -23,15 +24,30 @@ def fitness(tablero):
                 colisiones += 1
     return colisiones
 
-
+# Implementación del algoritmo genético
 def algoritmo_genetico():
-    # Se crea la población de 30 tableros para cada tratamiento
-    # Tamano de tablero fijo en 8, falta hacer para que cambie a 20
-    poblacion_tableros = [(generar_tablero(8), 0) for _ in range(30)]
+    # Las 30 réplicas
+    for replica in range(30):
+        inicio = time.time()
 
-    for generation in range(GENERACIONES_MAXIMAS):
-        poblacion_tableros = [(tablero, fitness(tablero)) for tablero, _ in poblacion_tableros]
-        
+        # Se crea la población de 30 tableros para cada tratamiento
+        # Tamano de tablero fijo en 8, falta hacer para que cambie a 20
+        poblacion_tableros = [(generar_tablero(8), 0) for _ in range(30)]
+
+        for generation in range(GENERACIONES_MAXIMAS):
+            poblacion_tableros = [(tablero, fitness(tablero)) for tablero, _ in poblacion_tableros]
+
+        mejor_tablero, mejor_fitness = min(poblacion_tableros, key=lambda x: x[1])
+        print("Mejor tablero:", mejor_tablero)
+        print("Mejor fitness:", mejor_fitness)
+
+        if mejor_fitness == 0:
+            print("Mejor tablero:", mejor_tablero)
+            print("Mejor fitness:", mejor_fitness)
+            # break
+            
+        fin = time.time()
+        print(f"Réplica: {replica + 1} | Tiempo = {fin - inicio:.4f} segundos")
 
 if __name__ == "__main__":
     algoritmo_genetico()
