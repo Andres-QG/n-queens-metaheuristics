@@ -1,89 +1,83 @@
 === Experimento para N=8 ===
-Corrida 1 | Tiempo = 0.0110 s | Iteraciones: 15 | Mejor fitness: 0
-Mejor tablero: [1, 6, 4, 7, 0, 3, 5, 2]
+Corrida 1 | Tiempo = 0.0751 s | Iteraciones: 100 | Mejor fitness: 0 | CPU inicio: 3.7%, CPU fin: 2.5% | Memoria disponible al inicio: 6955.43 MB, al final: 6935.13 MB
+Mejor tablero: [5, 2, 0, 7, 4, 1, 3, 6]
 Fitness: 0
-Corrida 2 | Tiempo = 0.0020 s | Iteraciones: 3 | Mejor fitness: 0
-Mejor tablero: [3, 1, 6, 2, 5, 7, 0, 4]
-Fitness: 0
-Corrida 3 | Tiempo = 0.0020 s | Iteraciones: 3 | Mejor fitness: 0
-Mejor tablero: [3, 7, 0, 2, 5, 1, 6, 4]
-Fitness: 0
-Corrida 4 | Tiempo = 0.0010 s | Iteraciones: 2 | Mejor fitness: 0
-Mejor tablero: [7, 1, 4, 2, 0, 6, 3, 5]
-Fitness: 0
-Corrida 5 | Tiempo = 0.0000 s | Iteraciones: 1 | Mejor fitness: 0
-Mejor tablero: [2, 5, 1, 6, 4, 0, 7, 3]
-Fitness: 0
-Corrida 6 | Tiempo = 0.0010 s | Iteraciones: 1 | Mejor fitness: 0
-Mejor tablero: [3, 5, 7, 2, 0, 6, 4, 1]
-Fitness: 0
-Corrida 7 | Tiempo = 0.1161 s | Iteraciones: 164 | Mejor fitness: 0
-Mejor tablero: [3, 0, 4, 7, 5, 2, 6, 1]
-Fitness: 0
-Corrida 8 | Tiempo = 0.0010 s | Iteraciones: 2 | Mejor fitness: 0
-Mejor tablero: [4, 0, 7, 3, 1, 6, 2, 5]
-Fitness: 0
-Corrida 9 | Tiempo = 0.1772 s | Iteraciones: 251 | Mejor fitness: 0
-Mejor tablero: [4, 2, 0, 5, 7, 1, 3, 6]
-Fitness: 0
-Corrida 10 | Tiempo = 0.0000 s | Iteraciones: 1 | Mejor fitness: 0
+Corrida 2 | Tiempo = 0.0010 s | Iteraciones: 1 | Mejor fitness: 0 | CPU inicio: 4.4%, CPU fin: 3.9% | Memoria disponible al inicio: 6952.12 MB, al final: 6952.35 MB
 Mejor tablero: [4, 7, 3, 0, 2, 5, 1, 6]
 Fitness: 0
-Corrida 11 | Tiempo = 0.0120 s | Iteraciones: 17 | Mejor fitness: 0
-Mejor tablero: [6, 1, 5, 2, 0, 3, 7, 4]
+Corrida 3 | Tiempo = 0.2802 s | Iteraciones: 390 | Mejor fitness: 0 | CPU inicio: 3.0%, CPU fin: 8.2% | Memoria disponible al inicio: 6948.67 MB, al final: 6945.58 MB
+Mejor tablero: [5, 2, 0, 7, 3, 1, 6, 4]
 Fitness: 0
-Corrida 12 | Tiempo = 0.0010 s | Iteraciones: 2 | Mejor fitness: 0
-Mejor tablero: [3, 5, 7, 1, 6, 0, 2, 4]
-Fitness: 0
-Corrida 13 | Tiempo = 0.0110 s | Iteraciones: 15 | Mejor fitness: 0
-Mejor tablero: [4, 6, 0, 3, 1, 7, 5, 2]
-Fitness: 0
-Corrida 14 | Tiempo = 0.0220 s | Iteraciones: 31 | Mejor fitness: 0
-Mejor tablero: [6, 3, 1, 4, 7, 0, 2, 5]
-Fitness: 0
-Corrida 15 | Tiempo = 0.2172 s | Iteraciones: 307 | Mejor fitness: 0
-Mejor tablero: [1, 6, 4, 7, 0, 3, 5, 2]
-Fitness: 0
-Corrida 16 | Tiempo = 0.1321 s | Iteraciones: 185 | Mejor fitness: 0
-Mejor tablero: [5, 3, 0, 4, 7, 1, 6, 2]
-Fitness: 0
-Corrida 17 | Tiempo = 0.0110 s | Iteraciones: 16 | Mejor fitness: 0
-Mejor tablero: [3, 5, 7, 1, 6, 0, 2, 4]
-Fitness: 0
-Corrida 18 | Tiempo = 0.0030 s | Iteraciones: 4 | Mejor fitness: 0
-Mejor tablero: [2, 5, 1, 4, 7, 0, 6, 3]
-Fitness: 0
-Corrida 19 | Tiempo = 0.0210 s | Iteraciones: 30 | Mejor fitness: 0
-Corrida 20 | Tiempo = 0.7257 s | Iteraciones: 995 | Mejor fitness: 0
-Mejor tablero: [1, 5, 0, 6, 3, 7, 2, 4]
-Fitness: 0
-Corrida 21 | Tiempo = 0.0010 s | Iteraciones: 1 | Mejor fitness: 0
-Mejor tablero: [3, 7, 0, 4, 6, 1, 5, 2]
-Fitness: 0
-Corrida 22 | Tiempo = 0.0050 s | Iteraciones: 8 | Mejor fitness: 0
-Mejor tablero: [1, 4, 6, 0, 2, 7, 5, 3]
-Fitness: 0
-Corrida 23 | Tiempo = 0.0000 s | Iteraciones: 1 | Mejor fitness: 0
-Mejor tablero: [6, 2, 0, 5, 7, 4, 1, 3]
-Fitness: 0
-Corrida 24 | Tiempo = 0.3964 s | Iteraciones: 547 | Mejor fitness: 0
-Mejor tablero: [2, 5, 7, 0, 3, 6, 4, 1]
-Fitness: 0
-Corrida 25 | Tiempo = 0.0010 s | Iteraciones: 2 | Mejor fitness: 0
-Mejor tablero: [4, 0, 7, 5, 2, 6, 1, 3]
-Fitness: 0
-Corrida 26 | Tiempo = 0.1641 s | Iteraciones: 221 | Mejor fitness: 0
-Mejor tablero: [3, 1, 7, 5, 0, 2, 4, 6]
-Fitness: 0
-Corrida 27 | Tiempo = 0.1792 s | Iteraciones: 246 | Mejor fitness: 0
+Corrida 4 | Tiempo = 0.0360 s | Iteraciones: 44 | Mejor fitness: 0 | CPU inicio: 19.8%, CPU fin: 18.9% | Memoria disponible al inicio: 7489.32 MB, al final: 8111.59 MB
+Corrida 5 | Tiempo = 0.7199 s | Iteraciones: 998 | Mejor fitness: 0 | CPU inicio: 8.8%, CPU fin: 10.2% | Memoria disponible al inicio: 9916.88 MB, al final: 9907.66 MB
+Corrida 6 | Tiempo = 0.7177 s | Iteraciones: 996 | Mejor fitness: 0 | CPU inicio: 12.8%, CPU fin: 5.6% | Memoria disponible al inicio: 9913.07 MB, al final: 9933.81 MB
 Mejor tablero: [3, 5, 7, 2, 0, 6, 4, 1]
 Fitness: 0
-Corrida 28 | Tiempo = 0.0320 s | Iteraciones: 45 | Mejor fitness: 0
-Corrida 29 | Tiempo = 0.7147 s | Iteraciones: 997 | Mejor fitness: 0
-Mejor tablero: [1, 7, 5, 0, 2, 4, 6, 3]
+Corrida 7 | Tiempo = 0.0060 s | Iteraciones: 9 | Mejor fitness: 0 | CPU inicio: 4.2%, CPU fin: 2.9% | Memoria disponible al inicio: 9955.86 MB, al final: 9959.77 MB
+Corrida 8 | Tiempo = 0.7177 s | Iteraciones: 992 | Mejor fitness: 0 | CPU inicio: 4.6%, CPU fin: 6.1% | Memoria disponible al inicio: 9966.98 MB, al final: 9960.81 MB
+Mejor tablero: [3, 0, 4, 7, 5, 2, 6, 1]
 Fitness: 0
-Corrida 30 | Tiempo = 0.4119 s | Iteraciones: 575 | Mejor fitness: 0
-Mejor tablero: [0, 5, 7, 2, 6, 3, 1, 4]
+Corrida 9 | Tiempo = 0.0010 s | Iteraciones: 1 | Mejor fitness: 0 | CPU inicio: 2.7%, CPU fin: 4.2% | Memoria disponible al inicio: 9945.88 MB, al final: 9966.82 MB
+Mejor tablero: [1, 6, 4, 7, 0, 3, 5, 2]
+Fitness: 0
+Corrida 10 | Tiempo = 0.0120 s | Iteraciones: 17 | Mejor fitness: 0 | CPU inicio: 3.4%, CPU fin: 3.3% | Memoria disponible al inicio: 9946.09 MB, al final: 9954.63 MB
+Mejor tablero: [3, 6, 4, 1, 5, 0, 2, 7]
+Fitness: 0
+Corrida 11 | Tiempo = 0.0010 s | Iteraciones: 1 | Mejor fitness: 0 | CPU inicio: 3.7%, CPU fin: 3.6% | Memoria disponible al inicio: 9966.15 MB, al final: 9962.12 MB
+Mejor tablero: [5, 3, 6, 0, 7, 1, 4, 2]
+Fitness: 0
+Corrida 12 | Tiempo = 0.0050 s | Iteraciones: 7 | Mejor fitness: 0 | CPU inicio: 3.8%, CPU fin: 5.2% | Memoria disponible al inicio: 9947.39 MB, al final: 9954.20 MB
+Mejor tablero: [6, 1, 3, 0, 7, 4, 2, 5]
+Fitness: 0
+Corrida 13 | Tiempo = 0.0010 s | Iteraciones: 2 | Mejor fitness: 0 | CPU inicio: 3.7%, CPU fin: 2.5% | Memoria disponible al inicio: 9947.48 MB, al final: 9939.97 MB
+Mejor tablero: [5, 2, 4, 7, 0, 3, 1, 6]
+Fitness: 0
+Corrida 14 | Tiempo = 0.0020 s | Iteraciones: 3 | Mejor fitness: 0 | CPU inicio: 3.4%, CPU fin: 3.2% | Memoria disponible al inicio: 9947.94 MB, al final: 9940.45 MB
+Corrida 15 | Tiempo = 0.7212 s | Iteraciones: 993 | Mejor fitness: 0 | CPU inicio: 3.4%, CPU fin: 3.6% | Memoria disponible al inicio: 9955.89 MB, al final: 9941.25 MB
+Mejor tablero: [4, 2, 0, 5, 7, 1, 3, 6]
+Fitness: 0
+Corrida 16 | Tiempo = 0.0050 s | Iteraciones: 7 | Mejor fitness: 0 | CPU inicio: 3.1%, CPU fin: 4.2% | Memoria disponible al inicio: 9942.03 MB, al final: 9960.57 MB
+Mejor tablero: [3, 6, 0, 7, 4, 1, 5, 2]
+Fitness: 0
+Corrida 17 | Tiempo = 0.0030 s | Iteraciones: 4 | Mejor fitness: 0 | CPU inicio: 3.8%, CPU fin: 3.4% | Memoria disponible al inicio: 9957.55 MB, al final: 9942.56 MB
+Mejor tablero: [4, 0, 3, 5, 7, 1, 6, 2]
+Fitness: 0
+Corrida 18 | Tiempo = 0.0080 s | Iteraciones: 12 | Mejor fitness: 0 | CPU inicio: 3.5%, CPU fin: 3.1% | Memoria disponible al inicio: 9942.66 MB, al final: 9957.88 MB
+Mejor tablero: [3, 1, 7, 5, 0, 2, 4, 6]
+Fitness: 0
+Corrida 19 | Tiempo = 0.0000 s | Iteraciones: 1 | Mejor fitness: 0 | CPU inicio: 3.2%, CPU fin: 3.1% | Memoria disponible al inicio: 9942.88 MB, al final: 9942.90 MB
+Mejor tablero: [2, 0, 6, 4, 7, 1, 3, 5]
+Fitness: 0
+Corrida 20 | Tiempo = 0.0010 s | Iteraciones: 2 | Mejor fitness: 0 | CPU inicio: 3.3%, CPU fin: 2.6% | Memoria disponible al inicio: 9958.09 MB, al final: 9943.05 MB
+Mejor tablero: [0, 6, 4, 7, 1, 3, 5, 2]
+Fitness: 0
+Corrida 21 | Tiempo = 0.0010 s | Iteraciones: 2 | Mejor fitness: 0 | CPU inicio: 3.2%, CPU fin: 3.1% | Memoria disponible al inicio: 9943.04 MB, al final: 9950.71 MB
+Mejor tablero: [5, 3, 6, 0, 7, 1, 4, 2]
+Fitness: 0
+Corrida 22 | Tiempo = 0.0971 s | Iteraciones: 134 | Mejor fitness: 0 | CPU inicio: 2.7%, CPU fin: 2.4% | Memoria disponible al inicio: 9943.33 MB, al final: 9943.38 MB
+Mejor tablero: [4, 7, 3, 0, 2, 5, 1, 6]
+Fitness: 0
+Corrida 23 | Tiempo = 0.0060 s | Iteraciones: 9 | Mejor fitness: 0 | CPU inicio: 3.2%, CPU fin: 3.4% | Memoria disponible al inicio: 9967.23 MB, al final: 9943.54 MB
+Mejor tablero: [5, 2, 0, 7, 3, 1, 6, 4]
+Fitness: 0
+Corrida 24 | Tiempo = 0.3653 s | Iteraciones: 510 | Mejor fitness: 0 | CPU inicio: 3.7%, CPU fin: 6.6% | Memoria disponible al inicio: 9943.56 MB, al final: 9933.57 MB
+Mejor tablero: [2, 5, 1, 6, 0, 3, 7, 4]
+Fitness: 0
+Corrida 25 | Tiempo = 0.0020 s | Iteraciones: 3 | Mejor fitness: 0 | CPU inicio: 3.8%, CPU fin: 2.7% | Memoria disponible al inicio: 9948.84 MB, al final: 9948.96 MB
+Mejor tablero: [7, 1, 3, 0, 6, 4, 2, 5]
+Fitness: 0
+Corrida 26 | Tiempo = 0.0020 s | Iteraciones: 3 | Mejor fitness: 0 | CPU inicio: 3.3%, CPU fin: 3.5% | Memoria disponible al inicio: 9936.82 MB, al final: 9934.32 MB
+Mejor tablero: [2, 7, 3, 6, 0, 5, 1, 4]
+Fitness: 0
+Corrida 27 | Tiempo = 0.2328 s | Iteraciones: 326 | Mejor fitness: 0 | CPU inicio: 2.8%, CPU fin: 8.7% | Memoria disponible al inicio: 9949.25 MB, al final: 9924.21 MB
+Mejor tablero: [5, 7, 1, 3, 0, 6, 4, 2]
+Fitness: 0
+Corrida 28 | Tiempo = 0.0050 s | Iteraciones: 7 | Mejor fitness: 0 | CPU inicio: 3.8%, CPU fin: 4.3% | Memoria disponible al inicio: 9909.39 MB, al final: 9924.74 MB
+Mejor tablero: [5, 2, 6, 1, 3, 7, 0, 4]
+Fitness: 0
+Corrida 29 | Tiempo = 0.0156 s | Iteraciones: 21 | Mejor fitness: 0 | CPU inicio: 3.9%, CPU fin: 5.7% | Memoria disponible al inicio: 9932.63 MB, al final: 9925.87 MB
+Corrida 30 | Tiempo = 0.7106 s | Iteraciones: 1000 | Mejor fitness: 0 | CPU inicio: 3.7%, CPU fin: 2.6% | Memoria disponible al inicio: 9934.88 MB, al final: 9920.59 MB
+Mejor tablero: [3, 5, 7, 1, 6, 0, 2, 4]
 Fitness: 0
 
 
@@ -91,89 +85,79 @@ Fitness: 0
 
 
 === Experimento para N=20 ===
-Corrida 1 | Tiempo = 19.7538 s | Iteraciones: 1461 | Mejor fitness: 0
+Corrida 1 | Tiempo = 3.3706 s | Iteraciones: 246 | Mejor fitness: 0 | CPU inicio: 2.5%, CPU fin: 4.0% | Memoria disponible al inicio: 9921.59 MB, al final: 9934.14 MB
+Mejor tablero: [1, 16, 13, 7, 9, 14, 3, 15, 0, 19, 8, 5, 2, 12, 17, 11, 18, 10, 6, 4]
+Fitness: 0
+Corrida 2 | Tiempo = 14.3397 s | Iteraciones: 1048 | Mejor fitness: 0 | CPU inicio: 3.5%, CPU fin: 6.3% | Memoria disponible al inicio: 9926.29 MB, al final: 9946.18 MB
+Corrida 3 | Tiempo = 683.3877 s | Iteraciones: 49991 | Mejor fitness: 0 | CPU inicio: 5.1%, CPU fin: 3.4% | Memoria disponible al inicio: 9954.19 MB, al final: 10039.29 MB
 Mejor tablero: [11, 2, 4, 6, 16, 19, 10, 7, 15, 8, 18, 1, 17, 0, 5, 12, 14, 9, 13, 3]
 Fitness: 0
-Corrida 2 | Tiempo = 489.5934 s | Iteraciones: 35676 | Mejor fitness: 0
-Mejor tablero: [5, 19, 13, 7, 17, 14, 6, 4, 1, 16, 12, 2, 18, 3, 9, 11, 15, 0, 10, 8]
+Corrida 4 | Tiempo = 11.7558 s | Iteraciones: 860 | Mejor fitness: 0 | CPU inicio: 3.3%, CPU fin: 3.7% | Memoria disponible al inicio: 10035.95 MB, al final: 10036.69 MB
+Mejor tablero: [5, 7, 16, 11, 19, 4, 15, 0, 2, 10, 17, 13, 3, 9, 14, 18, 1, 12, 8, 6]
 Fitness: 0
-Corrida 3 | Tiempo = 1.2102 s | Iteraciones: 87 | Mejor fitness: 0
-Mejor tablero: [1, 16, 8, 6, 2, 14, 18, 11, 3, 19, 15, 10, 4, 7, 0, 17, 13, 5, 9, 12]
+Corrida 5 | Tiempo = 208.2866 s | Iteraciones: 15280 | Mejor fitness: 0 | CPU inicio: 3.1%, CPU fin: 5.5% | Memoria disponible al inicio: 10036.63 MB, al final: 10023.45 MB
+Mejor tablero: [12, 9, 6, 0, 19, 16, 13, 10, 3, 11, 4, 17, 1, 14, 2, 7, 15, 8, 18, 5]
 Fitness: 0
-Corrida 4 | Tiempo = 66.6904 s | Iteraciones: 4822 | Mejor fitness: 0
-Mejor tablero: [9, 2, 6, 10, 12, 17, 0, 4, 19, 11, 15, 1, 5, 8, 14, 18, 3, 13, 16, 7]
+Corrida 6 | Tiempo = 43.1333 s | Iteraciones: 3158 | Mejor fitness: 0 | CPU inicio: 4.9%, CPU fin: 3.5% | Memoria disponible al inicio: 10015.56 MB, al final: 10062.32 MB
+Mejor tablero: [14, 11, 8, 15, 19, 3, 13, 4, 9, 0, 5, 16, 1, 12, 6, 17, 10, 7, 18, 2]
 Fitness: 0
-Corrida 5 | Tiempo = 29.9504 s | Iteraciones: 2155 | Mejor fitness: 0
-Mejor tablero: [18, 7, 10, 4, 2, 0, 15, 12, 1, 16, 14, 5, 3, 9, 13, 17, 19, 6, 8, 11]
+Corrida 7 | Tiempo = 41.1520 s | Iteraciones: 3010 | Mejor fitness: 0 | CPU inicio: 4.2%, CPU fin: 4.2% | Memoria disponible al inicio: 10062.69 MB, al final: 10045.19 MB
+Mejor tablero: [5, 14, 8, 17, 7, 3, 0, 2, 15, 18, 12, 19, 9, 13, 10, 4, 1, 16, 11, 6]
 Fitness: 0
-Corrida 6 | Tiempo = 362.7285 s | Iteraciones: 26215 | Mejor fitness: 0
-Mejor tablero: [3, 11, 8, 12, 5, 0, 17, 15, 10, 16, 6, 2, 9, 1, 19, 4, 14, 7, 18, 13]
+Corrida 8 | Tiempo = 2.5669 s | Iteraciones: 190 | Mejor fitness: 0 | CPU inicio: 3.1%, CPU fin: 2.9% | Memoria disponible al inicio: 10045.21 MB, al final: 10045.12 MB
+Mejor tablero: [13, 1, 14, 8, 3, 19, 17, 5, 9, 18, 0, 15, 6, 16, 7, 10, 12, 2, 4, 11]
 Fitness: 0
-Corrida 7 | Tiempo = 82.9546 s | Iteraciones: 5952 | Mejor fitness: 0
+Corrida 9 | Tiempo = 2.6644 s | Iteraciones: 197 | Mejor fitness: 0 | CPU inicio: 3.2%, CPU fin: 3.6% | Memoria disponible al inicio: 10045.14 MB, al final: 10053.29 MB
+Mejor tablero: [12, 5, 15, 11, 1, 6, 4, 13, 0, 16, 9, 7, 3, 18, 2, 17, 19, 10, 8, 14]
+Fitness: 0
+Corrida 10 | Tiempo = 28.5740 s | Iteraciones: 2066 | Mejor fitness: 0 | CPU inicio: 3.3%, CPU fin: 2.7% | Memoria disponible al inicio: 10060.52 MB, al final: 10068.10 MB
+Corrida 11 | Tiempo = 686.5342 s | Iteraciones: 49967 | Mejor fitness: 0 | CPU inicio: 5.5%, CPU fin: 5.2% | Memoria disponible al inicio: 10076.72 MB, al final: 10041.71 MB
 Mejor tablero: [6, 17, 15, 13, 8, 5, 18, 16, 0, 4, 11, 9, 3, 1, 19, 14, 10, 2, 7, 12]
 Fitness: 0
-Corrida 8 | Tiempo = 84.7577 s | Iteraciones: 6157 | Mejor fitness: 0
-Mejor tablero: [7, 5, 13, 9, 0, 15, 19, 12, 16, 1, 4, 2, 14, 10, 17, 3, 6, 18, 11, 8]
+Corrida 12 | Tiempo = 3.2990 s | Iteraciones: 240 | Mejor fitness: 0 | CPU inicio: 3.7%, CPU fin: 2.9% | Memoria disponible al inicio: 10045.05 MB, al final: 10053.36 MB
+Mejor tablero: [15, 4, 7, 0, 14, 12, 6, 13, 19, 17, 1, 10, 2, 9, 18, 8, 3, 11, 16, 5]
 Fitness: 0
-Corrida 9 | Tiempo = 2.7031 s | Iteraciones: 195 | Mejor fitness: 0
-Mejor tablero: [8, 14, 2, 17, 13, 9, 7, 3, 15, 19, 12, 1, 18, 5, 11, 4, 0, 16, 6, 10]
-Fitness: 0
-Corrida 10 | Tiempo = 209.8243 s | Iteraciones: 15311 | Mejor fitness: 0
-Mejor tablero: [16, 6, 10, 17, 15, 3, 12, 2, 7, 5, 1, 13, 9, 14, 18, 8, 19, 0, 4, 11]
-Fitness: 0
-Corrida 11 | Tiempo = 499.9277 s | Iteraciones: 36797 | Mejor fitness: 0
-Mejor tablero: [11, 17, 12, 9, 2, 19, 7, 1, 13, 18, 5, 14, 8, 6, 3, 15, 0, 16, 4, 10]
-Fitness: 0
-Corrida 12 | Tiempo = 163.2982 s | Iteraciones: 11986 | Mejor fitness: 0
+Corrida 13 | Tiempo = 2.3982 s | Iteraciones: 177 | Mejor fitness: 0 | CPU inicio: 3.2%, CPU fin: 4.0% | Memoria disponible al inicio: 10060.70 MB, al final: 10060.87 MB
+Corrida 14 | Tiempo = 690.2205 s | Iteraciones: 49900 | Mejor fitness: 0 | CPU inicio: 4.1%, CPU fin: 3.5% | Memoria disponible al inicio: 10053.67 MB, al final: 9834.79 MB
 Mejor tablero: [11, 15, 19, 6, 4, 2, 7, 3, 12, 14, 18, 1, 10, 5, 0, 17, 9, 16, 13, 8]
 Fitness: 0
-Corrida 13 | Tiempo = 154.5796 s | Iteraciones: 11334 | Mejor fitness: 0
-Mejor tablero: [16, 13, 1, 4, 6, 12, 19, 15, 3, 0, 14, 8, 18, 7, 17, 11, 2, 10, 5, 9]
+Corrida 15 | Tiempo = 43.7293 s | Iteraciones: 3202 | Mejor fitness: 0 | CPU inicio: 3.9%, CPU fin: 3.2% | Memoria disponible al inicio: 9850.30 MB, al final: 9844.98 MB
+Mejor tablero: [4, 0, 16, 8, 5, 7, 15, 18, 11, 1, 3, 19, 2, 9, 14, 12, 10, 6, 13, 17]
 Fitness: 0
-Corrida 14 | Tiempo = 18.8361 s | Iteraciones: 1382 | Mejor fitness: 0
-Mejor tablero: [7, 10, 2, 5, 18, 11, 14, 19, 4, 8, 15, 3, 16, 0, 9, 12, 17, 1, 6, 13]
+Corrida 16 | Tiempo = 1.4024 s | Iteraciones: 102 | Mejor fitness: 0 | CPU inicio: 3.1%, CPU fin: 2.8% | Memoria disponible al inicio: 9836.11 MB, al final: 9851.33 MB
+Mejor tablero: [9, 7, 17, 14, 11, 2, 5, 15, 10, 3, 6, 16, 1, 13, 0, 18, 8, 12, 19, 4]
 Fitness: 0
-Corrida 15 | Tiempo = 2.8806 s | Iteraciones: 207 | Mejor fitness: 0
+Corrida 17 | Tiempo = 17.2614 s | Iteraciones: 1274 | Mejor fitness: 0 | CPU inicio: 3.9%, CPU fin: 3.0% | Memoria disponible al inicio: 9844.11 MB, al final: 9834.16 MB
+Mejor tablero: [1, 10, 16, 6, 12, 15, 11, 19, 5, 3, 17, 4, 18, 9, 0, 13, 8, 2, 7, 14]
+Fitness: 0
+Corrida 18 | Tiempo = 22.9688 s | Iteraciones: 1667 | Mejor fitness: 0 | CPU inicio: 2.4%, CPU fin: 2.9% | Memoria disponible al inicio: 9834.16 MB, al final: 9835.19 MB
+Mejor tablero: [5, 14, 9, 11, 15, 8, 2, 0, 17, 3, 12, 10, 18, 4, 6, 1, 13, 7, 16, 19]
+Fitness: 0
+Corrida 19 | Tiempo = 220.3691 s | Iteraciones: 16037 | Mejor fitness: 0 | CPU inicio: 4.0%, CPU fin: 5.8% | Memoria disponible al inicio: 9850.27 MB, al final: 9864.27 MB
+Mejor tablero: [15, 17, 12, 9, 3, 6, 10, 1, 11, 16, 0, 19, 5, 18, 14, 7, 13, 4, 2, 8]
+Fitness: 0
+Corrida 20 | Tiempo = 121.3921 s | Iteraciones: 8870 | Mejor fitness: 0 | CPU inicio: 3.1%, CPU fin: 4.8% | Memoria disponible al inicio: 9857.14 MB, al final: 9847.59 MB
+Corrida 21 | Tiempo = 691.0717 s | Iteraciones: 49995 | Mejor fitness: 0 | CPU inicio: 2.8%, CPU fin: 3.8% | Memoria disponible al inicio: 9847.91 MB, al final: 10020.14 MB
+Corrida 22 | Tiempo = 682.7851 s | Iteraciones: 49987 | Mejor fitness: 0 | CPU inicio: 4.3%, CPU fin: 3.4% | Memoria disponible al inicio: 10031.93 MB, al final: 10015.24 MB
 Mejor tablero: [0, 14, 5, 8, 18, 13, 15, 9, 4, 1, 16, 12, 2, 7, 11, 19, 3, 10, 6, 17]
 Fitness: 0
-Corrida 16 | Tiempo = 107.1091 s | Iteraciones: 7712 | Mejor fitness: 0
-Mejor tablero: [5, 15, 11, 18, 0, 3, 19, 8, 1, 9, 12, 17, 7, 16, 13, 2, 10, 14, 6, 4]
-Fitness: 0
-Corrida 17 | Tiempo = 411.6857 s | Iteraciones: 30501 | Mejor fitness: 0
-Mejor tablero: [14, 7, 13, 6, 0, 2, 11, 5, 10, 17, 3, 18, 16, 12, 9, 15, 8, 4, 19, 1]
-Fitness: 0
-Corrida 18 | Tiempo = 104.0777 s | Iteraciones: 7584 | Mejor fitness: 0
-Mejor tablero: [11, 4, 1, 3, 12, 9, 15, 2, 10, 19, 16, 18, 13, 7, 5, 8, 6, 0, 14, 17]
-Fitness: 0
-Corrida 19 | Tiempo = 191.6134 s | Iteraciones: 13793 | Mejor fitness: 0
-Corrida 20 | Tiempo = 681.0086 s | Iteraciones: 49989 | Mejor fitness: 0
-Mejor tablero: [4, 12, 15, 8, 11, 3, 16, 9, 17, 1, 18, 10, 6, 14, 0, 5, 19, 2, 13, 7]
-Fitness: 0
-Corrida 21 | Tiempo = 1.0690 s | Iteraciones: 78 | Mejor fitness: 0
-Mejor tablero: [12, 6, 15, 3, 19, 4, 7, 11, 16, 5, 17, 0, 10, 8, 2, 18, 9, 14, 1, 13]
-Fitness: 0
-Corrida 22 | Tiempo = 29.3247 s | Iteraciones: 2133 | Mejor fitness: 0
-Corrida 23 | Tiempo = 687.3681 s | Iteraciones: 49998 | Mejor fitness: 0
-Mejor tablero: [8, 11, 3, 17, 7, 18, 15, 12, 6, 9, 14, 4, 1, 19, 13, 2, 0, 5, 10, 16]
-Fitness: 0
-Corrida 24 | Tiempo = 37.7085 s | Iteraciones: 2755 | Mejor fitness: 0
+Corrida 23 | Tiempo = 18.7141 s | Iteraciones: 1370 | Mejor fitness: 0 | CPU inicio: 3.3%, CPU fin: 3.0% | Memoria disponible al inicio: 10015.21 MB, al final: 10015.35 MB
+Corrida 24 | Tiempo = 692.2520 s | Iteraciones: 49991 | Mejor fitness: 0 | CPU inicio: 4.4%, CPU fin: 4.5% | Memoria disponible al inicio: 10016.15 MB, al final: 8160.26 MB
+Corrida 25 | Tiempo = 675.1790 s | Iteraciones: 49978 | Mejor fitness: 0 | CPU inicio: 3.5%, CPU fin: 10.1% | Memoria disponible al inicio: 8160.68 MB, al final: 8193.16 MB
 Mejor tablero: [6, 14, 2, 17, 13, 7, 4, 19, 11, 0, 18, 10, 1, 3, 9, 16, 8, 5, 12, 15]
 Fitness: 0
-Corrida 25 | Tiempo = 89.2827 s | Iteraciones: 6386 | Mejor fitness: 0
-Mejor tablero: [4, 12, 15, 6, 3, 1, 13, 19, 16, 2, 10, 5, 17, 8, 11, 7, 14, 18, 0, 9]
+Corrida 26 | Tiempo = 107.9633 s | Iteraciones: 7936 | Mejor fitness: 0 | CPU inicio: 9.4%, CPU fin: 4.6% | Memoria disponible al inicio: 8200.00 MB, al final: 8281.42 MB
+Mejor tablero: [2, 14, 9, 4, 1, 17, 12, 18, 16, 5, 0, 6, 11, 13, 7, 19, 3, 15, 10, 8]
 Fitness: 0
-Corrida 26 | Tiempo = 1.5104 s | Iteraciones: 106 | Mejor fitness: 0
-Mejor tablero: [8, 12, 7, 18, 2, 11, 6, 10, 17, 13, 0, 4, 14, 1, 5, 9, 15, 3, 19, 16]
+Corrida 27 | Tiempo = 8.8847 s | Iteraciones: 651 | Mejor fitness: 0 | CPU inicio: 4.0%, CPU fin: 6.1% | Memoria disponible al inicio: 8303.76 MB, al final: 8287.60 MB
+Mejor tablero: [8, 19, 12, 9, 7, 2, 13, 3, 1, 18, 14, 11, 6, 0, 16, 10, 5, 15, 17, 4]
 Fitness: 0
-Corrida 27 | Tiempo = 3.5482 s | Iteraciones: 251 | Mejor fitness: 0
-Mejor tablero: [2, 12, 7, 1, 4, 6, 15, 17, 11, 8, 16, 3, 19, 9, 18, 5, 13, 10, 0, 14]
+Corrida 28 | Tiempo = 1.8387 s | Iteraciones: 136 | Mejor fitness: 0 | CPU inicio: 4.3%, CPU fin: 5.7% | Memoria disponible al inicio: 8281.93 MB, al final: 8295.69 MB
+Mejor tablero: [1, 4, 13, 16, 6, 11, 5, 15, 17, 14, 7, 3, 0, 8, 12, 19, 2, 10, 18, 9]
 Fitness: 0
-Corrida 28 | Tiempo = 57.8311 s | Iteraciones: 4161 | Mejor fitness: 0
-Mejor tablero: [4, 8, 15, 19, 7, 16, 1, 13, 0, 17, 6, 2, 12, 18, 11, 3, 14, 10, 5, 9]
+Corrida 29 | Tiempo = 68.8992 s | Iteraciones: 5031 | Mejor fitness: 0 | CPU inicio: 3.5%, CPU fin: 3.6% | Memoria disponible al inicio: 8299.63 MB, al final: 8291.61 MB
+Mejor tablero: [9, 16, 10, 15, 18, 1, 4, 12, 8, 6, 13, 3, 14, 0, 7, 19, 17, 11, 2, 5]
 Fitness: 0
-Corrida 29 | Tiempo = 25.3303 s | Iteraciones: 1819 | Mejor fitness: 0
-Mejor tablero: [12, 0, 2, 14, 11, 9, 1, 17, 5, 7, 15, 19, 8, 16, 4, 6, 3, 18, 10, 13]
-Fitness: 0
-Corrida 30 | Tiempo = 1.6055 s | Iteraciones: 113 | Mejor fitness: 0
-Mejor tablero: [8, 17, 0, 3, 10, 14, 9, 19, 13, 2, 12, 5, 1, 4, 18, 16, 11, 7, 15, 6]
+Corrida 30 | Tiempo = 98.6910 s | Iteraciones: 7257 | Mejor fitness: 0 | CPU inicio: 3.3%, CPU fin: 3.7% | Memoria disponible al inicio: 8292.23 MB, al final: 8258.70 MB
+Mejor tablero: [0, 14, 8, 2, 12, 6, 11, 19, 4, 16, 13, 3, 1, 17, 7, 9, 18, 5, 15, 10]
 Fitness: 0
