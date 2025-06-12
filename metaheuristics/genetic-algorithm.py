@@ -9,11 +9,6 @@ def generar_tablero(tamano):
     random.shuffle(tablero)
     return tablero
 
-
-# Valor preliminar
-TAMANO_POBLACION = 50
-
-
 # Función para calcular el fitness de un tablero,
 # es decir, comprobar si se da alguna colisión entre las reinas
 def fitness(tablero):
@@ -54,8 +49,9 @@ def mutacion(tablero):
 def algoritmo_genetico(Tamano):
     print(f"=== Experimento para N={Tamano} ===")
 
-    tasa_mutacion = 0.05 if Tamano <= 8 else 0.0125
-    GENERACIONES_MAXIMAS = 1000 if Tamano == 8 else 10000
+    tasa_mutacion = 0.05 if Tamano <= 8 else 0.01
+    GENERACIONES_MAXIMAS = 1000 if Tamano == 8 else 50000
+    TAMANO_POBLACION = 50 if Tamano <= 8 else 300
 
     for replica in range(30):
         inicio = time.time()
@@ -80,8 +76,8 @@ def algoritmo_genetico(Tamano):
             padres = seleccion(poblacion, 5)
 
             while len(nueva_generacion) < TAMANO_POBLACION:
-                p1 = random.choice(padres)[0]
-                p2 = random.choice(padres)[0]
+                p1 = random.choice(padres[:3])[0]  # de los mejores 3
+                p2 = random.choice(padres[:3])[0]
                 hijo = cruce(p1, p2)
                 if random.random() < tasa_mutacion:
                     hijo = mutacion(hijo)
