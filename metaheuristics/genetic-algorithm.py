@@ -1,13 +1,22 @@
 # Algoritmo genético para el problema de las n-reinas
 import random
 import time
-
+import psutil
 
 # Genera un tablero con posiciones aleatorias
 def generar_tablero(tamano):
     tablero = list(range(tamano))
     random.shuffle(tablero)
     return tablero
+
+def medir_estado_sistema():
+    cpu = psutil.cpu_percent(interval=1)
+    memoria = psutil.virtual_memory()
+    return cpu, memoria.available, memoria.percent
+
+# Valor preliminar
+TAMANO_POBLACION = 50
+
 
 # Función para calcular el fitness de un tablero,
 # es decir, comprobar si se da alguna colisión entre las reinas
@@ -54,6 +63,7 @@ def algoritmo_genetico(Tamano):
     TAMANO_POBLACION = 50 if Tamano <= 8 else 300
 
     for replica in range(30):
+        cpu_inicio, memoria_disponible_inicio, memoria_usada_inicio = medir_estado_sistema()
         inicio = time.time()
         poblacion = [(generar_tablero(Tamano), 0) for _ in range(TAMANO_POBLACION)]
         solucion_optima = False
@@ -86,7 +96,8 @@ def algoritmo_genetico(Tamano):
             poblacion = nueva_generacion
 
         fin = time.time()
-        print(f"Corrida {replica + 1} | Tiempo = {fin - inicio:.4f} s | Iteraciones: {generacion} | Mejor fitness: {mejor[1]}")
+        cpu_fin, memoria_disponible_fin, memoria_usada_fin = medir_estado_sistema()
+        print(f"Corrida {replica + 1} | Tiempo = {fin - inicio:.4f} s | Iteraciones: {generacion} | Mejor fitness: {mejor[1]} | CPU inicio: {cpu_inicio}%, CPU fin: {cpu_fin}% | Memoria disponible al inicio: {memoria_disponible_inicio / (1024**2):.2f} MB, al final: {memoria_disponible_fin / (1024**2):.2f} MB")
 
 if __name__ == "__main__":
     algoritmo_genetico(8)
